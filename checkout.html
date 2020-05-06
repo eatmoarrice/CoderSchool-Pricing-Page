@@ -19,18 +19,19 @@
     <link rel="stylesheet" href="/css/checkout.css">
 </head>
 <body>
-
-    <div class="row body">
+    <div class="flex">
         <div class="logo">
-        <img src="img/logo.jpeg" alt="CoderSchool logo" width="120px"/>
-        </div>
-        <div class="title">
-            <h1 class="text-center">Checkout Form</h1>
-        </div>
-        <p class="text-center">
-            Donec eget fringilla ex. Justo tincidunt id. Viva ipsum dolor sit amet, consectetur adipiscing elit. Sus suscipit a, facilisis sed ante. Nulla feugiat et nisl eget auctor.
-        </p>
-        <div class="allform">
+            <img src="img/logo.jpeg" alt="CoderSchool logo" width="120px"/>
+            </div>
+            <div class="title">
+                <h1 class="text-center">Checkout Form</h1>
+            </div>
+            <p class="text-center">
+                Donec eget fringilla ex. Justo tincidunt id. Viva ipsum dolor sit amet, consectetur adipiscing elit. Sus suscipit a, facilisis sed ante. Nulla feugiat et nisl eget auctor.
+            </p>
+    </div>
+    <div class="row body">
+        
         <div class="col-8">
         <form>
         <h6>Billing address</h6>
@@ -70,11 +71,17 @@
         <div class="form-row">
             <div class="form-group col-md-5">
                 <label for="country">Country</label>
-                <input type="text" class="form-control" id="country"/>
+                <select class="custom-select" id="country" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>...</option>
+                  </select>
               </div>
               <div class="form-group col-md-4">
                 <label for="state">State</label>
-                <input type="text" class="form-control" id="state"/>
+                <select class="custom-select" id="state" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>...</option>
+                  </select>
               </div>
               <div class="form-group col-md-3">
                 <label for="zip">Zip</label>
@@ -136,14 +143,49 @@
         <button type="submit" class="btn btn-primary col-12">Continue to checkout</button>
     </form>
     </div>
-    <div class="card col-4 align-self-start">
+    <div class=" col-4 align-self-start">
+        <div class="flex-2">
+        <h6>Your cart</h6> <span class="badge badge-pill badge-secondary">3</span>
+        </div>
+    <div class="card">
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Vestibulum at eros</li>
+          <li class="list-group-item">
+              <div class="row">
+                  <p class="col-8 ptitle">Product name</p>
+                  <p class="col-4 text-right pname"> 4.9 M</p>
+                  <p class="col pname">Web Design Bootcamp</p>
+              </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+                <p class="col-8 ptitle">Second product</p>
+                <p class="col-4 text-right pname"> 14.9 M</p>
+                <p class="col pname">React + React Native</p>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+                <p class="col-8 ptitle">Third item</p>
+                <p class="col-4 text-right pname"> 14.9 M</p>
+                <p class="col pname">Machine Learning</p>
+            </div>
+          </li>
+          <li class="list-group-item promo">
+            <div class="row ">
+                <p class="col-8 ptitle green">Promo code</p>
+                <p class="col-4 text-right pname green"> -7.5 M</p>
+                <p class="col pname green">EXAMPLECODE</p>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+                <p class="col-8">Total (VND)</p>
+                <p class="col-4 text-right ptitle"> 27.2 M</p>
+            </div>
+          </li>
         </ul>
       </div>
     </div>
-</div>
+    </div>
 </body>
 </html>
