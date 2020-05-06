@@ -48,7 +48,7 @@ form {
     font-weight: 500;
 }
 
-.pname {
+.gray {
     color: gray;
 }
 
@@ -66,4 +66,8 @@ form {
 
 .card {
     margin-bottom: 10px;
+}
+
+label, ::placeholder {
+    font-size: 14px;
 }
