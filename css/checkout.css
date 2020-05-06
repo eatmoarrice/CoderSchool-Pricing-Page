@@ -71,3 +71,13 @@ form {
 label, ::placeholder {
     font-size: 14px;
 }
+
+.form-control:focus {
+    border-color: black;
+    box-shadow: none;
+} 
+
+.no-left {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
