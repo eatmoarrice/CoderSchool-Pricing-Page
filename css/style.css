@@ -3,8 +3,59 @@
   }
 
   section {
-      display: flex;
-      padding-top: 20%;
-      align-items: center;
-      flex-direction: column;
+    display: flex;
+    min-height: 800px;
+    padding: 25px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  section .typewrite {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  :root {
+    --red: #cd4541;
+  }
+  
+  .red {
+    color: var(--red);
+  }
+
+  .btn-primary {
+    border: 0px;
+    color: white;
+    background-color: var(--red);
+  }
+
+  .card {
+    width: 340px;
+    height: 545px;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 40px rgba(59, 43, 91, 0.3);
+  }
+
+  .card-body{
+    width: 100%;
+  }
+
+  .card-text{
+    width: 300px;
+    height: 75px;
+  }
+
+  section:nth-child(odd) {
+      background-color: #e9ebee;
+  }
+
+  #third {
+    background-image: url(/img/banner.jpg);
+  }
+
+  #fourth > .container > p:nth-last-of-type(1) {
+    font-size: 25px;
+    margin-bottom: 100px;
   }
