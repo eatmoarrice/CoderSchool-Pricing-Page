@@ -63,3 +63,7 @@ form {
 .red {
     color: #cd4541;
 }
+
+.card {
+    margin-bottom: 10px;
+}
